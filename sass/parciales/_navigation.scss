@@ -1,2 +1,77 @@
 @import "./variables";
 @import "./responsive";
+
+.header {
+    background: $primary;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    z-index: 9999;
+    height: 6rem;
+
+    &__navegacion {
+        width: 100%;
+        background: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0.4rem 0rem;
+
+
+        @include tablet {
+            padding: 0.4rem 0.6rem 0rem 1.2rem;
+            width: 100vw;
+        }
+
+        &--logoimg {
+            height: 7rem;
+
+            @include laptop {
+                height: 2.3rem;
+            }
+
+            @include tablet {
+                display: block;
+                height: 3.2rem;
+                margin: 0.6rem 0.3rem 0.3rem 0.3rem;
+            }
+        }
+
+
+        &--menu {
+            z-index: 999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            width: 50%;
+            transition: all ease .2s;
+        }
+
+        &--item-menu {
+            text-transform: uppercase;
+        }
+
+        &--link-menu {
+            color: $blanco-texto;
+        }
+
+        
+        &--social {
+            display: flex;
+            color: $secondary;
+            justify-content: space-between;
+            width: 9rem;
+        }
+
+        &--social-link i {
+            font-size: 14px;
+            font-weight: bold;
+            color: $secondary;
+            outline: 2px solid $secondary;
+            padding: 5px;
+            border-radius: 9999px;
+        }
+
+}
+}
