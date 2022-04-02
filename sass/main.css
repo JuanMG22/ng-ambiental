@@ -197,13 +197,21 @@ a {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin: 4% 0;
+  height: fit-content;
+  margin-top: 4%;
   border: none;
   border-bottom: 1px solid gray;
   text-decoration: none;
 }
+.section-form .box-form .form-input:focus {
+  outline: none;
+}
 .section-form .box-form .area {
   width: 100%;
+  margin-top: 4%;
+}
+.section-form .box-form .area:focus {
+  outline: none;
 }
 .section-form .box-form .send {
   display: flex;
@@ -213,6 +221,14 @@ a {
   border: none;
   background: none;
   font-size: 1rem;
+}
+.section-form .box-form .error {
+  border-bottom: 2px solid red;
+}
+.section-form .box-form .text-area {
+  display: none;
+  color: red;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=main.css.map */
