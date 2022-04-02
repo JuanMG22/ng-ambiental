@@ -1,0 +1,55 @@
+.section-form{
+    
+
+    width: 40%;
+    height: 300px;
+    margin: 0 auto;
+    
+    .title{
+        display: flex;
+        justify-content: center;
+        color: $primary;
+        font-family:Lato-Black;
+        src: url('../../fonts/Lato\ Font/._Lato-Black.ttf');
+        font-size: 40px;
+        
+    }
+        .text{
+            color: $secondary;
+            font-family:Lato-Black;
+            src: url('../../fonts/Lato\ Font/._Lato-Black.ttf');
+            margin: 4% 0;  
+        }
+
+    .box-form{ 
+     
+
+
+            .form-input{
+                
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin:4% 0;
+                border: none;
+                border-bottom: 1px solid gray;
+                text-decoration: none;
+            }
+
+            .area{
+                width: 100%;
+                
+            }
+
+            .send{
+                display: flex;
+                margin: 0 88%;
+                font-family:Lato-Black;
+                src: url('../../fonts/Lato\ Font/._Lato-Black.ttf'); 
+                border: none;
+                background: none;
+                font-size: 1rem;
+                }
+
+}
+}

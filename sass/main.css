@@ -1,2 +1,218 @@
-*,*::before,*::after{-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0}@font-face{font-family:Lato-Black;src:url("../fonts/._Lato-Black.ttf")}html{overflow-x:hidden;overflow-y:scroll;scroll-behavior:smooth;font-size:100%;scroll-padding-top:4rem}ul,ol,li,a,h1,h2,h3,p,body,header,section,footer,.container,.container-fluid,.row,.col{margin:0;padding:0}a{text-decoration:none;outline:none}ul{list-style:none}button,input,textarea,select{font:inherit}button{cursor:pointer}.img-fluid{max-width:100%;height:auto}.container-fluid{width:100%}body{background:#fff;background-position:center;text-rendering:optimizeLegibility;font-size:16px;width:100%;min-height:100vh;overflow-x:hidden;line-height:1.5;-webkit-tap-highlight-color:rgba(0,0,0,0)}@media all and (max-width: 1440px){body{font-size:14px}}@media all and (max-width: 1024px){body{font-size:12px}}@media all and (max-width: 768px){body{font-size:10px}body p,body label{font-size:14px}}li{list-style:none}a{text-decoration:none;color:#fff}.header{background:#31374c;background-size:cover;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;z-index:9999;height:6rem}.header__navegacion{width:100%;background:none;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:0.4rem 0rem}@media all and (max-width: 768px){.header__navegacion{padding:0.4rem 0.6rem 0rem 1.2rem;width:100vw}}.header__navegacion--logoimg{height:7rem}@media all and (max-width: 1024px){.header__navegacion--logoimg{height:2.3rem}}@media all and (max-width: 768px){.header__navegacion--logoimg{display:block;height:3.2rem;margin:0.6rem 0.3rem 0.3rem 0.3rem}}.header__navegacion--menu{z-index:999;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:40px;width:50%;-webkit-transition:all ease .2s;transition:all ease .2s}.header__navegacion--item-menu{text-transform:uppercase}.header__navegacion--link-menu{color:#ccc}.header__navegacion--social{display:-webkit-box;display:-ms-flexbox;display:flex;color:#408a63;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;width:9rem}.header__navegacion--social-link i{font-size:14px;font-weight:bold;color:#408a63;outline:2px solid #408a63;padding:5px;border-radius:9999px}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Lato-Black;
+  src: url("../fonts/._Lato-Black.ttf");
+}
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  font-size: 100%;
+  scroll-padding-top: 4rem;
+}
+
+ul,
+ol,
+li,
+a,
+h1,
+h2,
+h3,
+p,
+body,
+header,
+section,
+footer,
+.container,
+.container-fluid,
+.row,
+.col {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+body {
+  background: #fff;
+  background-position: center;
+  text-rendering: optimizeLegibility;
+  font-size: 16px;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  line-height: 1.5;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+@media all and (max-width: 1440px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media all and (max-width: 1024px) {
+  body {
+    font-size: 12px;
+  }
+}
+@media all and (max-width: 768px) {
+  body {
+    font-size: 10px;
+  }
+  body p,
+body label {
+    font-size: 14px;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header {
+  background: #31374c;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  z-index: 9999;
+  height: 6rem;
+}
+.header__navegacion {
+  width: 100%;
+  background: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.4rem 0rem;
+}
+@media all and (max-width: 768px) {
+  .header__navegacion {
+    padding: 0.4rem 0.6rem 0rem 1.2rem;
+    width: 100vw;
+  }
+}
+.header__navegacion--logoimg {
+  height: 7rem;
+}
+@media all and (max-width: 1024px) {
+  .header__navegacion--logoimg {
+    height: 2.3rem;
+  }
+}
+@media all and (max-width: 768px) {
+  .header__navegacion--logoimg {
+    display: block;
+    height: 3.2rem;
+    margin: 0.6rem 0.3rem 0.3rem 0.3rem;
+  }
+}
+.header__navegacion--menu {
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 50%;
+  transition: all ease 0.2s;
+}
+.header__navegacion--item-menu {
+  text-transform: uppercase;
+}
+.header__navegacion--link-menu {
+  color: #ccc;
+}
+.header__navegacion--social {
+  display: flex;
+  color: #408a63;
+  justify-content: space-between;
+  width: 9rem;
+}
+.header__navegacion--social-link i {
+  font-size: 14px;
+  font-weight: bold;
+  color: #408a63;
+  outline: 2px solid #408a63;
+  padding: 5px;
+  border-radius: 9999px;
+}
+
+.section-form {
+  width: 40%;
+  height: 300px;
+  margin: 0 auto;
+}
+.section-form .title {
+  display: flex;
+  justify-content: center;
+  color: #31374c;
+  font-family: Lato-Black;
+  src: url("../../fonts/Lato Font/._Lato-Black.ttf");
+  font-size: 40px;
+}
+.section-form .text {
+  color: #408a63;
+  font-family: Lato-Black;
+  src: url("../../fonts/Lato Font/._Lato-Black.ttf");
+  margin: 4% 0;
+}
+.section-form .box-form .form-input {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 4% 0;
+  border: none;
+  border-bottom: 1px solid gray;
+  text-decoration: none;
+}
+.section-form .box-form .area {
+  width: 100%;
+}
+.section-form .box-form .send {
+  display: flex;
+  margin: 0 88%;
+  font-family: Lato-Black;
+  src: url("../../fonts/Lato Font/._Lato-Black.ttf");
+  border: none;
+  background: none;
+  font-size: 1rem;
+}
+
 /*# sourceMappingURL=main.css.map */
