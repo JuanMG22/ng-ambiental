@@ -231,4 +231,14 @@ a {
   font-weight: bold;
 }
 
+.link-whats {
+  position: fixed;
+  right: 0;
+  bottom: 1rem;
+  z-index: 1;
+}
+.link-whats .img-whats {
+  width: 6rem;
+}
+
 /*# sourceMappingURL=main.css.map */
