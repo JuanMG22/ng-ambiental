@@ -174,4 +174,61 @@ a {
   border-radius: 9999px;
 }
 
+.section-form {
+  width: 40%;
+  height: 300px;
+  margin: 0 auto;
+}
+.section-form .title {
+  display: flex;
+  justify-content: center;
+  color: #31374c;
+  font-family: Lato-Black;
+  src: url("../../fonts/Lato Font/._Lato-Black.ttf");
+  font-size: 40px;
+}
+.section-form .text {
+  color: #408a63;
+  font-family: Lato-Black;
+  src: url("../../fonts/Lato Font/._Lato-Black.ttf");
+  margin: 4% 0;
+}
+.section-form .box-form .form-input {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+  margin-top: 4%;
+  border: none;
+  border-bottom: 1px solid gray;
+  text-decoration: none;
+}
+.section-form .box-form .form-input:focus {
+  outline: none;
+}
+.section-form .box-form .area {
+  width: 100%;
+  margin-top: 4%;
+}
+.section-form .box-form .area:focus {
+  outline: none;
+}
+.section-form .box-form .send {
+  display: flex;
+  margin: 0 88%;
+  font-family: Lato-Black;
+  src: url("../../fonts/Lato Font/._Lato-Black.ttf");
+  border: none;
+  background: none;
+  font-size: 1rem;
+}
+.section-form .box-form .error {
+  border-bottom: 2px solid red;
+}
+.section-form .box-form .text-area {
+  display: none;
+  color: red;
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=main.css.map */
