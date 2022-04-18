@@ -80,6 +80,7 @@ body {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     font-family: 'Lato',
         sans-serif;
+        overflow: hidden;
 
     @include laptop-l {
         font-size: 14px;
@@ -106,4 +107,29 @@ li {
 a {
     text-decoration: none;
     color: $blanco;
+}
+
+.btn {
+    background-color: $btn-color;
+    border-radius: 9999px;
+    color: $blanco;
+    font-size: 120%;
+    letter-spacing: 0.5rem;
+    font-weight: 300;
+    padding: 0.5rem 3rem;
+    box-shadow: $sombra-negra;
+
+    &:hover {
+        color: $blanco;
+        background-color: #1d83af;
+    }
+}
+
+.hr-box {
+    padding: 0.75rem 0;
+
+    &--hr {
+        width: 25rem;
+        height: 3px;
+    }
 }
