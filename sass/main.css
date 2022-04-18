@@ -243,4 +243,14 @@ a {
   object-fit: cover;
 }
 
+.titCarusel {
+  position: relative;
+  margin-bottom: 7rem;
+  width: 90%;
+  margin-left: 4rem;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Lato-Black;
+}
+
 /*# sourceMappingURL=main.css.map */
