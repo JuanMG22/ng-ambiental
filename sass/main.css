@@ -241,6 +241,8 @@ a {
 .carrusel .img-carusel {
   height: 23rem;
   object-fit: cover;
+  opacity: 0.9;
+  filter: brightness(50%);
 }
 
 .titCarusel {
@@ -248,9 +250,9 @@ a {
   margin-bottom: 7rem;
   width: 90%;
   margin-left: 4rem;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
-  font-family: Lato-Black;
+  font-family: "Lato", sans-serif;
 }
 
 /*# sourceMappingURL=main.css.map */
