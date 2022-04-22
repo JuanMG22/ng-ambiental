@@ -1,6 +1,24 @@
 // Titulos
+
+@mixin container-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
 @mixin titulo {
     font-size: 250%;
     font-weight: 900;
     letter-spacing: 0.75rem;
+}
+
+@mixin img-section {
+    margin-top: 6rem;
+    height: 25rem;
+    width: 100%;
+    background-size: cover;
+    background-position: center 65%;
+    background-attachment: fixed;
 }
