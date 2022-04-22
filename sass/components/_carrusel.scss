@@ -3,7 +3,7 @@
 .carrusel {
 
     .img-carusel {
-        height: 23rem;
+        height: 70vh;
         object-fit: cover;
         opacity: 0.9;
         filter: brightness(50%);
@@ -12,9 +12,21 @@
 }
 
 .titCarusel {
-    position: relative;
-    margin-bottom: 7rem;
-    width: 90%;
-    margin-left: 4rem;
-    @include titulo
+    width: 100%;
+    @include titulo;
+    width: 45ch;
+    font-size: 270%;
+}
+
+.btnCarousel {
+    height: 1.2rem !important;
+    width: 1.2rem !important;
+    border: 2px solid white !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+    border-radius: 9999px !important;
+    margin: 1.2rem !important;
+}
+
+.carousel-indicators .active {
+    background-color: #fff !important;
 }
