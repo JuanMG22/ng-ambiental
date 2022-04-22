@@ -1,8 +1,20 @@
-.carrusel{
+@import "../parciales/mixins";
 
-    .img-carusel{
+.carrusel {
+
+    .img-carusel {
         height: 23rem;
-        object-fit: cover; 
+        object-fit: cover;
+        opacity: 0.9;
+        filter: brightness(50%);
 
     }
+}
+
+.titCarusel {
+    position: relative;
+    margin-bottom: 7rem;
+    width: 90%;
+    margin-left: 4rem;
+    @include titulo
 }
