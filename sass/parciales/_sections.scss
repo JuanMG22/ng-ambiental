@@ -29,6 +29,7 @@
 .services {
     @include container-section;
     background-color: $primary;
+    padding-top: 6rem;
 
     &__titulo {
         @include titulo;
@@ -39,20 +40,19 @@
         margin-top: 3rem;
         display: flex;
         justify-content: center;
-        gap: 7rem;
+        align-items: center;
+        gap: 6rem;
         width: 100%;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        padding-bottom: 6rem;
     
         &--item {
             align-self: center;
-    
-            @include laptop-l {
-                margin: 0.625rem 6.25rem;
-            }
+
         }
     
         &--img {
-            width: 180px;
+            width: 100%;
             align-self: center;
             height: 180px;
             object-fit: contain;
@@ -70,16 +70,17 @@
     
         &--logo-titulo {
             color: $blanco-texto;
-            font-size: 130%;
+            font-size: 140%;
             text-align: center;
             font-weight: 300;
-            width: 20ch;
+            width: 15ch;
             margin: 0;
         }
+
     }
 
     &__img {
         @include img-section;
-        background-image: url('../img/company-image.png');
+        background-image: url('../img/services-image.png');
     }
 }
