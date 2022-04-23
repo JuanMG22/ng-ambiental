@@ -26,6 +26,7 @@
     }
 }
 
+// Company Section
 .services {
     @include container-section;
     background-color: $primary;
@@ -82,5 +83,50 @@
     &__img {
         @include img-section;
         background-image: url('../img/services-image.png');
+    }
+}
+
+// Staff Section
+
+.staff {
+    @include container-section;
+
+    &__titulo {
+        @include titulo;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        align-items: center;
+        width: 100%;
+        border: 1px solid red;
+    }
+
+    &__img-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &--img {
+            border: 1px;
+            border-radius: 9999px;
+        }
+    }
+    &__texto-box {
+        padding: 0.75rem 0;
+        width: 21ch;
+        line-height: 3ch;
+        font-size: 140%;
+        font-weight: 300;
+        color: #31374c;
+        margin-bottom: 3rem;
+        border: 1px solid red;
+    }
+
+    &__img {
+        @include img-section;
+        background-image: url('../img/company-image.png');
     }
 }
