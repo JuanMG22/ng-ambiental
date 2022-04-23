@@ -4,11 +4,7 @@
 // Company Section
 
 .company {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 5rem 0;
+    @include container-section;
 
     &__titulo {
         @include titulo;
@@ -25,12 +21,66 @@
     }
 
     &__img {
-        margin-top: 6rem;
-        height: 25rem;
-        width: 100%;
+        @include img-section;
         background-image: url('../img/company-image.png');
-        background-size: cover;
-        background-position: center 65%;
-        background-attachment: fixed;
+    }
+}
+
+.services {
+    @include container-section;
+    background-color: $primary;
+    padding-top: 6rem;
+
+    &__titulo {
+        @include titulo;
+        color: $blanco;
+    }
+
+    &__logo-box {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6rem;
+        width: 100%;
+        flex-wrap: nowrap;
+        padding-bottom: 6rem;
+    
+        &--item {
+            align-self: center;
+
+        }
+    
+        &--img {
+            width: 100%;
+            align-self: center;
+            height: 180px;
+            object-fit: contain;
+    
+            @include laptop-l {
+                width: 150px;
+                height: 150px;
+            }
+    
+            @include mobile-l {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    
+        &--logo-titulo {
+            color: $blanco-texto;
+            font-size: 140%;
+            text-align: center;
+            font-weight: 300;
+            width: 15ch;
+            margin: 0;
+        }
+
+    }
+
+    &__img {
+        @include img-section;
+        background-image: url('../img/services-image.png');
     }
 }
