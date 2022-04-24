@@ -42,7 +42,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 6rem;
+        column-gap: 6rem;
         width: 100%;
         flex-wrap: nowrap;
         padding-bottom: 6rem;
@@ -98,35 +98,67 @@
     &__container {
         display: flex;
         justify-content: center;
-        gap: 2rem;
+        gap: 4rem;
         align-items: center;
         width: 100%;
-        border: 1px solid red;
+        height: 100%;
     }
 
     &__img-box {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: flex-start;
+        height: 25rem;
 
         &--img {
-            border: 1px;
-            border-radius: 9999px;
+            border-radius: 100%;
+            width: 18rem;
         }
     }
     &__texto-box {
+        margin-top: 6rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 30px;
+        height: 100%;
         padding: 0.75rem 0;
         width: 21ch;
         line-height: 3ch;
         font-size: 140%;
         font-weight: 300;
         color: #31374c;
-        margin-bottom: 3rem;
-        border: 1px solid red;
+        margin-bottom: 6rem;
+
+        &--titulo {
+            letter-spacing: 0.40rem;
+            font-weight: 700;
+            width: 20ch;
+            font-size: 180%;
+        }
+        &--subtitulo {
+            letter-spacing: 0.40rem;
+            font-size: 90%;
+            font-weight: 500;
+            width: 30ch;
+            color: $btn-color;
+        }
+
+        &--parrafo {
+            line-height: 1.9rem;
+            font-weight: 300;
+            color: #31374c;
+        }
+    }
+
+    .btn {
+        font-size: 95%;
+        margin-top: 20px;
     }
 
     &__img {
         @include img-section;
-        background-image: url('../img/company-image.png');
+        background-image: url('../img/staff-image.png');
     }
 }

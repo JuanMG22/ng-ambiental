@@ -304,7 +304,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 6rem;
+  -webkit-column-gap: 6rem;
+          column-gap: 6rem;
   width: 100%;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
@@ -390,12 +391,12 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 2rem;
+  gap: 4rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  border: 1px solid red;
+  height: 100%;
 }
 
 .staff__img-box {
@@ -409,22 +410,64 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 25rem;
 }
 
 .staff__img-box--img {
-  border: 1px;
-  border-radius: 9999px;
+  border-radius: 100%;
+  width: 18rem;
 }
 
 .staff__texto-box {
+  margin-top: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  row-gap: 30px;
+  height: 100%;
   padding: 0.75rem 0;
   width: 21ch;
   line-height: 3ch;
   font-size: 140%;
   font-weight: 300;
   color: #31374c;
-  margin-bottom: 3rem;
-  border: 1px solid red;
+  margin-bottom: 6rem;
+}
+
+.staff__texto-box--titulo {
+  letter-spacing: 0.40rem;
+  font-weight: 700;
+  width: 20ch;
+  font-size: 180%;
+}
+
+.staff__texto-box--subtitulo {
+  letter-spacing: 0.40rem;
+  font-size: 90%;
+  font-weight: 500;
+  width: 30ch;
+  color: #1f91c0;
+}
+
+.staff__texto-box--parrafo {
+  line-height: 1.9rem;
+  font-weight: 300;
+  color: #31374c;
+}
+
+.staff .btn {
+  font-size: 95%;
+  margin-top: 20px;
 }
 
 .staff__img {
@@ -434,7 +477,7 @@ a {
   background-size: cover;
   background-position: center 65%;
   background-attachment: fixed;
-  background-image: url("../img/company-image.png");
+  background-image: url("../img/staff-image.png");
 }
 
 .section-form {
