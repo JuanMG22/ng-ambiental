@@ -1,76 +1,108 @@
-.section-form{
+@import "../parciales/variables";
+@import "../parciales/mixins";
+
+.section-form {
+    background-image: url('../../img/contact-bg.png') !important;
+    background-position: bottom right;
+    background-size: 27%;
+    background-repeat: no-repeat;
+
     
-    
-    width: 40%;
-    height: 300px;
-    margin: 0 auto;
-    
-    .title{
+    padding-bottom: 7rem;
+
+    &-container {
+        width: 40%;
+        margin: auto;
+    }
+
+    .title {
         margin-top: 40%;
         display: flex;
         justify-content: center;
         color: $primary;
-        font-family: 'Lato',
-        sans-serif;
-        font-weight: bold;
-        font-size: 40px;
-        
+        font-weight: 900;
+        font-size: 430%;
     }
-        .text{
-            color: $secondary;
-            font-family: 'Lato',
-            sans-serif;
-            margin: 4% 0;  
+
+    .text {
+        color: $btn-color;
+        margin: 8% 0;
+        font-weight: 300;
+        font-size: 155%;
+        width: 52ch;
+        line-height: 3rem;
+    }
+
+    .box-form {
+
+
+
+        .form-input {
+
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: fit-content;
+            margin-top: 4%;
+            border: none;
+            border-bottom: 1px solid gray;
+            text-decoration: none;
+            padding: 10px;
+            font-size: 150%;
+
+            &::placeholder {
+                font-weight: 400;
+                padding: 1px;
+            }
+
+            &:focus {
+                outline: none;
+            }
         }
 
-    .box-form{ 
-     
+        .area {
+            width: 100%;
+            padding: 10px;
+            margin-top: 4%;
+            resize: none !important;
+            font-size: 150%;
+            border-top: none;
+            border-left: none;
+            border-right: none;
 
-
-            .form-input{
-                
-                display: flex;
-                justify-content: center;
-                width: 100%;
-                height: fit-content;
-                margin-top:4% ;
-                border: none;
-                border-bottom: 1px solid gray;
-                text-decoration: none;
-                &:focus{
-                    outline: none;
-                }
+            &::placeholder {
+                font-weight: 400;
+                padding: 2px;
             }
 
-            .area{
-                width: 100%;
-                margin-top: 4%;
-                &:focus{
-                    outline: none;
-                }
-                
+            &:focus {
+                outline: none;
             }
 
-            .send{
-                display: flex;
-                margin: 0 88%;
-                font-family:Lato-Black;
-                src: url('../../fonts/Lato\ Font/._Lato-Black.ttf'); 
-                border: none;
-                background: none;
-                font-size: 1rem;
-                }
+        }
 
-            .error{
-                border-bottom: 2px solid red;
+        .send {
+            display: flex;
+            margin: 2% 88%;
+            border: none;
+            background: none;
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-size: 150%;
+            font-weight: 900;
+            color: $primary;
+        }
 
-            }
+        .error {
+            border-bottom: 2px solid red;
 
-            .text-area{
-                display: none;
-                color: red;
-                font-weight: bold;
-            }
+        }
 
-}
+        .text-area {
+            display: none ;
+            color: red;
+            font-weight: 900;
+        }
+
+    }
 }

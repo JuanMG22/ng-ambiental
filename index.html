@@ -266,9 +266,9 @@
       <div class="hr-box">
         <img class="hr-box--hr" src="./img/hr.png" alt="hr">
       </div>
-      <div class="row">
-        <div class="col-sm-3 ">
-          <img class="img-card" src="img/nafta.jpeg"  alt="...">
+      <div class="d-flex justify-content-around gap-4">
+        <div class="col-sm-4 ">
+          <img class="img-card" src="img/nafta.png"  alt="...">
           <div class="card">
        
               <div class="card-body">
@@ -280,26 +280,26 @@
 
         </div>
         </div>
-        <div class="col-sm-3">
-          <img class="img-card" src="img/hidrologia.jpg"  alt="...">
+        <div class="col-sm-4">
+          <img class="img-card" src="img/hidrologia.png"  alt="...">
           <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Hidrologia, especializacion en ISO</h5>
                 <p class="card-text">Soy Lic. En diagnostico y gestion ambiental(UNICEN), tengo cursos de posgrado en aspectos ambientales</p>
-                <a href="#" class="btn btn-primary boton">LEER MAS</a>
+                <a href="#" class="btn boton">LEER MAS</a>
                 
               </div>
 
         </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-4">
           <img class="img-card" src="img/maiz.webp"  alt="...">
           <div class="card">
 
               <div class="card-body">
                 <h5 class="card-title">Cursos en evaluación de riesgo ambiental(RBCA)</h5>
                 <p class="card-text">Soy Lic. En diagnostico y gestion ambiental(UNICEN), tengo cursos de posgrado en aspectos ambientales</p>
-                <a href="#" class="btn btn-primary boton">LEER MAS</a>
+                <a href="#" class="btn boton">LEER MAS</a>
                 
               </div>
 
@@ -310,35 +310,60 @@
 
 
     <section class="section-form">
+      <div class="section-form-container">
 
-      <div class="box-title">
-        <h3 class="title ">Contactanos</h3>
-        <p class="text">Recibimos consultas referidas a nuestros campo de accion para proover diagnosticos y soluciones de 
-          forma rapida y efectiva. Envianos tus datos y nos pondremos en contacto a la brevedad.</p>
+        <div class="box-title">
+          <h3 class="title ">Contactanos</h3>
+          <p class="text">Recibimos consultas referidas a nuestros campo de accion para proover diagnosticos y soluciones de 
+            forma rapida y efectiva. Envianos tus datos y nos pondremos en contacto a la brevedad.</p>
+        </div>
+  
+      <div class="box-form">
+        <form action="" class="form" id="Form">
+  
+      
+            <input type="text" class="form-input" id="name" placeholder="Nombre">
+            <p class="text-area" >Campo incompleto</p>
+            
+            <input type="email" class="form-input" id="email" placeholder="E-mail">
+            <p class="text-area" >Campo incompleto</p>
+  
+            <textarea name="" id="text-area" class=" area" cols="10" rows="5" placeholder="Escriba su consulta"></textarea>
+            <p class="text-area" >Campo incompleto</p>
+            
+            <input type="submit" class=" send" id="submit" value="Enviar">
+      
+       </form>
+  
       </div>
-
-    <div class="box-form">
-      <form action="" class="form" id="Form">
-
-    
-          <input type="text" class="form-input" id="name" placeholder="Nombre">
-          <p class="text-area" >Campo incompleto</p>
-          
-          <input type="email" class="form-input" id="email" placeholder="E-mail">
-          <p class="text-area" >Campo incompleto</p>
-
-          <textarea name="" id="text-area" class=" area" cols="10" rows="5" placeholder="Escriba su consulta"></textarea>
-          <p class="text-area" >Campo incompleto</p>
-          
-          <input type="submit" class=" send" id="submit" value="Enviar">
-    
-     </form>
-
-    </div>
+      </div>
 
     </section>
 
-
+    <footer class="footer">
+      <nav class="footer__navegacion">
+        <a href="#">
+          <img loading="lazy" class="logoimg" src="./img/logo-footer.png" alt="NG Ambiental" />
+    
+        </a>
+    
+        <div class="contact">
+          <p class="p-contact">
+            +54 9 49 460-3749
+          </p>
+          <p class="p-contact">
+            n.gonzalez@ngambiental.com.ar
+          </p>
+        </div>
+    
+        <div class="social">
+          <a href="#" class="header__navegacion--social-link"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" class="header__navegacion--social-link"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="header__navegacion--social-link"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="header__navegacion--social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </nav>
+    </footer>
 
 
 

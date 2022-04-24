@@ -1,10 +1,17 @@
+@import "../parciales/variables";
+@import "../parciales/mixins";
+
 .novedades{
     background-color: $primary;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 600px;
+    padding-top: 16rem;
 }
 
 .novedades__titulo{
-    padding-top: 4%;
     display: flex;
     justify-content: center;
     font-size: 200%;
@@ -14,53 +21,42 @@
     color: $blanco;
 }
 
-.hr-box{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-}
 .row{
     display: flex;
-    justify-content: center;
-    justify-content:safe;
-
+    justify-content: space-around;
+    
     
 }
 
 .card{
-    
     margin-top: 2px;
-    width: 90%;
-    height: 330px;
-    border: none;
+    width: 21rem;
+    height: 22rem;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    border-radius: 0%;
 
     .card-body{
-        border: 1px solid grey;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
      
             .card-title{
-                display: flex;
-                justify-content: center;
-                width: 80%;
-                margin: 10% auto;
-                font-weight: bold;
-                color: $primary;
+                text-align: left;
+                font-size: 150%;
+                width: 20ch;
+                font-weight: 700;
             }
 
             .card-text{
-                margin-top: 10%;
                 font-weight:300;
-                width: 80%;
-                margin: 0 auto;
+                width: 28ch;
+                font-size: 105%;
             }
 
             .boton{
-               display: flex;
-               justify-content: center;
-              margin-left: 20%;
-                width: 60%;
-                padding: 0.2rem;
-                margin-top: 15%;
-                font-size: 90%;
+                font-size: 80%;
             }
 
 
@@ -69,8 +65,8 @@
 }
 
 .img-card{
-   
-    width: 90%;
+    margin-top: 3.2rem;
+    width: 21rem;
     height: 200px;
     object-fit: cover;
     
