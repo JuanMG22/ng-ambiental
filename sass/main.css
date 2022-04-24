@@ -525,13 +525,4 @@ a {
   object-fit: cover;
 }
 
-.footer {
-  background: #31374c;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  z-index: 9999;
-  height: 6rem;
-}
-
 /*# sourceMappingURL=main.css.map */
