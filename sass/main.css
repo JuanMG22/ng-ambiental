@@ -224,6 +224,7 @@ a {
   margin: 0 auto;
 }
 .section-form .title {
+  margin-top: 30%;
   display: flex;
   justify-content: center;
   color: #31374c;
@@ -315,7 +316,26 @@ a {
 
 .novedades {
   background-color: #31374c;
-  height: 500px;
+  height: 600px;
+}
+
+.novedades__titulo {
+  padding-top: 4%;
+  display: flex;
+  justify-content: center;
+  font-size: 200%;
+  font-weight: 900;
+  letter-spacing: 0.75rem;
+  font-size: 250%;
+  font-weight: 900;
+  letter-spacing: 0.75rem;
+  color: #fff;
+}
+
+.hr-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
 .row {
@@ -325,17 +345,42 @@ a {
 }
 
 .card {
-  margin-top: 30px;
+  margin-top: 2px;
   width: 90%;
-  height: 450px;
+  height: 330px;
   border: none;
+}
+.card .card-body {
+  border: 1px solid grey;
+}
+.card .card-body .card-title {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 10% auto;
+  font-weight: bold;
+  color: #31374c;
+}
+.card .card-body .card-text {
+  margin-top: 10%;
+  font-weight: 300;
+  width: 80%;
+  margin: 0 auto;
+}
+.card .card-body .boton {
+  display: flex;
+  justify-content: center;
+  margin-left: 20%;
+  width: 60%;
+  padding: 0.2rem;
+  margin-top: 15%;
+  font-size: 90%;
 }
 
 .img-card {
-  width: 100%;
+  width: 90%;
   height: 200px;
   object-fit: cover;
-  margin-bottom: 40px;
 }
 
 /*# sourceMappingURL=main.css.map */
