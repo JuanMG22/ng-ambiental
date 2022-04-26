@@ -2,12 +2,15 @@
 @import "./responsive";
 
 .header {
-    background: $primary;
+    background: $primary-transparency;
     background-size: cover;
     display: flex;
     justify-content: center;
     z-index: 9999;
     height: 6rem;
+    position: fixed;
+    width: 100%;
+
 
     &__navegacion {
         width: 100%;
@@ -54,6 +57,10 @@
 
         &--link-menu {
             color: $blanco-texto;
+
+            &:hover {
+                color: $blanco;
+            }
         }
 
         

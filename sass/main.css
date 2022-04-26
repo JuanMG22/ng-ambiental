@@ -128,7 +128,7 @@ a {
 }
 
 .header {
-  background: #31374c;
+  background: rgba(49, 55, 76, 0.5);
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -138,6 +138,8 @@ a {
           justify-content: center;
   z-index: 9999;
   height: 6rem;
+  position: fixed;
+  width: 100%;
 }
 
 .header__navegacion {
@@ -202,6 +204,10 @@ a {
 
 .header__navegacion--link-menu {
   color: #ccc;
+}
+
+.header__navegacion--link-menu:hover {
+  color: #fff;
 }
 
 .header__navegacion--social {
