@@ -19,57 +19,37 @@
   </head>
 
   <body>
-    <header class="header">
-      <nav class="header__navegacion">
-        <a href="#">
-          <img
-            loading="lazy"
-            class="header__navegacion--logoimg"
-            src="./img/logo.png"
-            alt="NG Ambiental"
-          />
-        </a>
-        <ul class="header__navegacion--menu">
-          <li class="header__navegacion--item-menu">
-            <a
-              class="header__navegacion--link-menu"
-              href="#nosotros"
-            >
-              Nosotros
-            </a>
-          </li>
-          <li class="header__navegacion--item-menu">
-            <a
-              class="header__navegacion--link-menu"
-              href="#servicios"
-            >
-              Servicios
-            </a>
-          </li>
-          <li class="header__navegacion--item-menu">
-            <a
-              class="header__navegacion--link-menu"
-              href="#staff"
-            >
-              Founder
-            </a>
-          </li>
-          <li class="header__navegacion--item-menu">
-            <a
-              class="header__navegacion--link-menu"
-              href="#contacto"
-            >
-              Contacto
-            </a>
-          </li>
-        </ul>
-        <div class="header__navegacion--social">
+
+
+    <!-- NavBar Mobile -->
+    <header>
+      <div class="menuBtn">
+        <i class="fas fa-bars fa-2x"></i>
+      </div>
+      <div class="logoContenedor">
+        <a href="index.html"><img src="img/logo.png" alt="logo vinos" class="logo logoHeader"></a>
+      </div>
+      <nav>
+        <ul class="navMenu">
+          <li><a href="pages/nosotros.html">NOSOTROS</a></li>
+          <li><a href="pages/turismo.html">SERVICIOS</a></li>
+          <li><a href="pages/bodega.html">FOUNDER</a></li>
+          <li><a href="pages/contacto.html">CONTACTO</a></li>
+          <hr class="hr">
+          <div class="contactLinksMenu">
             <a href="#" class="header__navegacion--social-link"><i class="fa-brands fa-facebook"></i></a>
             <a href="#" class="header__navegacion--social-link"><i class="fa-brands fa-instagram"></i></a>
             <a href="#" class="header__navegacion--social-link"><i class="fa-brands fa-twitter"></i></a>
             <a href="#" class="header__navegacion--social-link"><i class="fa-brands fa-linkedin-in"></i></a>
-        </div>
+          </div>
+        </ul>
       </nav>
+      <div class="header__navegacion--social">
+        <a href="#" class="header__navegacion--social-link"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class="header__navegacion--social-link"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="header__navegacion--social-link"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="header__navegacion--social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
     </header>
 
     
@@ -368,6 +348,7 @@ integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+
     <!--Sweet alert-->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+    <script src="js/menu.js"></script>
     <script src="js/form.js"></script>
   </body>
 </html>
