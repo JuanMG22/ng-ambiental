@@ -26,15 +26,15 @@
     }
 }
 
-// Company Section
+// Services Section
 .services {
     @include container-section;
-    background-color: $primary;
+    background-color: $blanco;
     padding-top: 6rem;
 
     &__titulo {
         @include titulo;
-        color: $blanco;
+        color: $primary;
     }
 
     &__logo-box {
@@ -42,7 +42,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        column-gap: 6rem;
+        column-gap: 2rem;
         width: 100%;
         flex-wrap: nowrap;
         padding-bottom: 6rem;
@@ -57,6 +57,7 @@
             align-self: center;
             height: 180px;
             object-fit: contain;
+            fill: 100%;
     
             @include laptop-l {
                 width: 150px;
@@ -70,11 +71,11 @@
         }
     
         &--logo-titulo {
-            color: $blanco-texto;
+            color: $primary;
             font-size: 140%;
             text-align: center;
-            font-weight: 300;
-            width: 15ch;
+            font-weight: 400;
+            width: 17ch;
             margin: 0;
         }
 
