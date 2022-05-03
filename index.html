@@ -19,63 +19,46 @@
   </head>
 
   <body>
-    <header class="header">
-      <nav class="header__navegacion">
-        <a href="#">
-          <img
-            loading="lazy"
-            class="header__navegacion--logoimg"
-            src="./img/logo.png"
-            alt="NG Ambiental"
-          />
-        </a>
-        <ul class="header__navegacion--menu">
-          <li class="header__navegacion--item-menu">
-            <a
-              class="header__navegacion--link-menu"
-              href="#nosotros"
-            >
-              Nosotros
-            </a>
-          </li>
-          <li class="header__navegacion--item-menu">
-            <a
-              class="header__navegacion--link-menu"
-              href="#servicios"
-            >
-              Servicios
-            </a>
-          </li>
-          <li class="header__navegacion--item-menu">
-            <a
-              class="header__navegacion--link-menu"
-              href="#staff"
-            >
-              Founder
-            </a>
-          </li>
-          <li class="header__navegacion--item-menu">
-            <a
-              class="header__navegacion--link-menu"
-              href="#contacto"
-            >
-              Contacto
-            </a>
-          </li>
-        </ul>
-        <div class="header__navegacion--social">
-            <a href="#" class="header__navegacion--social-link"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#" class="header__navegacion--social-link"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" class="header__navegacion--social-link"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#" class="header__navegacion--social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+
+
+    <!-- NavBar -->
+    <header>
+      <div class="container-mobile">
+
+        <div class="logoContenedor">
+          <a href="#"><img src="img/logo.png" alt="logo vinos" class="logo logoHeader"></a>
         </div>
+        <div class="menuBtn" id="menuBtn">
+          <i class="fas fa-bars fa-2x"></i>
+        </div>
+      </div>
+      <nav>
+        <ul class="navMenu">
+          <li class="link1"><a href="#nosotros">NOSOTROS</a></li>
+          <li class="link2"><a href="#servicios">SERVICIOS</a></li>
+          <li class="link3"><a href="#staff">FOUNDER</a></li>
+          <li class="link4"><a href="#contacto">CONTACTO</a></li>
+          <hr class="hr">
+          <div class="contactLinksMenu">
+            <a target="_blank" href="https://www.facebook.com/ngambiental/" class="header__navegacion--social-link"><i class="fa-brands fa-facebook"></i></a>
+            <a target="_blank" href="https://www.instagram.com/ngambiental/" class="header__navegacion--social-link"><i class="fa-brands fa-instagram"></i></a>
+            <a target="_blank" href="#" class="header__navegacion--social-link"><i class="fa-brands fa-twitter"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/nicolas-gonzalez-ng-ambiental/" class="header__navegacion--social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </ul>
       </nav>
+      <div class="header__navegacion--social">
+        <a target="_blank" href="https://www.facebook.com/ngambiental/" class="header__navegacion--social-link"><i class="fa-brands fa-facebook"></i></a>
+        <a target="_blank" href="https://www.instagram.com/ngambiental/" class="header__navegacion--social-link"><i class="fa-brands fa-instagram"></i></a>
+        <a target="_blank" href="#" class="header__navegacion--social-link"><i class="fa-brands fa-twitter"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/nicolas-gonzalez-ng-ambiental/" class="header__navegacion--social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
     </header>
 
     
     <!--LINK WHATSAPP-->
     <div class="link-whats">
-      <a href="https://api.whatsapp.com/send/?phone=5492494603749&text&app_absent=0" target="blank_">
+      <a target="_blank" href="https://api.whatsapp.com/send/?phone=5492494603749&text&app_absent=0" target="blank_">
         <img class="img-whats img-fluid" src="img/whatsapp2.png"  alt=""> 
       </a>
     </div>
@@ -142,7 +125,7 @@
       </div>
 
       <div class="company__texto-box">
-        <p class="company__text-box--parrafo">
+        <p class="company__texto-box--parrafo">
           Ofrecemos una mirada moderna en materia de Ambiente, Seguridad e Higiene.   Mejorando la calidad e impacto de los
           proyectos, con una dinámica de trabajo personalizada y en conjunto. Brindamos soluciones ambientales acordes a los
           requerimientos de nuestros clientes con una visión sustentable de los problemas en la actualidad.
@@ -258,46 +241,47 @@
       <div class="hr-box">
         <img class="hr-box--hr" src="./img/hr.png" alt="hr">
       </div>
-      <div class="d-flex justify-content-around gap-4">
-        <div class="col-sm-4 ">
-          <img class="img-card" src="img/nafta.png"  alt="...">
-          <div class="card">
-       
-              <div class="card-body">
-                <h5 class="card-title">Cursos de posgrado en aspectos ambientales</h5>
-                <p class="card-text">Soy Lic. En diagnostico y gestion ambiental(UNICEN), tengo cursos de posgrado en aspectos ambientales</p>
-                <a href="#" class="btn boton">LEER MAS</a>
-                
-              </div>
 
+        <div class="row">
+          <div class="col-sm-4">
+            <img class="img-card" src="img/nafta.png"  alt="...">
+            <div class="card">
+         
+                <div class="card-body">
+                  <h5 class="card-title">Cursos de posgrado en aspectos ambientales</h5>
+                  <p class="card-text">Soy Lic. En diagnostico y gestion ambiental(UNICEN), tengo cursos de posgrado en aspectos ambientales</p>
+                  <a target="_blank" href="#" class="btn boton">LEER MAS</a>
+                  
+                </div>
+  
+          </div>
+          </div>
+          <div class="col-sm-4">
+            <img class="img-card" src="img/hidrologia.png"  alt="...">
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Hidrologia, especializacion en ISO</h5>
+                  <p class="card-text">Soy Lic. En diagnostico y gestion ambiental(UNICEN), tengo cursos de posgrado en aspectos ambientales</p>
+                  <a target="_blank" href="#" class="btn boton">LEER MAS</a>
+                  
+                </div>
+  
+          </div>
+          </div>
+          <div class="col-sm-4">
+            <img class="img-card" src="img/maiz.png"  alt="...">
+            <div class="card">
+  
+                <div class="card-body">
+                  <h5 class="card-title">Cursos en evaluación de riesgo ambiental(RBCA)</h5>
+                  <p class="card-text">Soy Lic. En diagnostico y gestion ambiental(UNICEN), tengo cursos de posgrado en aspectos ambientales</p>
+                  <a target="_blank" href="#" class="btn boton">LEER MAS</a>
+                  
+                </div>
+  
+          </div>
+          </div>
         </div>
-        </div>
-        <div class="col-sm-4">
-          <img class="img-card" src="img/hidrologia.png"  alt="...">
-          <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Hidrologia, especializacion en ISO</h5>
-                <p class="card-text">Soy Lic. En diagnostico y gestion ambiental(UNICEN), tengo cursos de posgrado en aspectos ambientales</p>
-                <a href="#" class="btn boton">LEER MAS</a>
-                
-              </div>
-
-        </div>
-        </div>
-        <div class="col-sm-4">
-          <img class="img-card" src="img/maiz.webp"  alt="...">
-          <div class="card">
-
-              <div class="card-body">
-                <h5 class="card-title">Cursos en evaluación de riesgo ambiental(RBCA)</h5>
-                <p class="card-text">Soy Lic. En diagnostico y gestion ambiental(UNICEN), tengo cursos de posgrado en aspectos ambientales</p>
-                <a href="#" class="btn boton">LEER MAS</a>
-                
-              </div>
-
-        </div>
-        </div>
-      </div>
     </section>
 
 
@@ -306,8 +290,7 @@
 
         <div class="box-title">
           <h3 class="title ">Contactanos</h3>
-          <p class="text">Recibimos consultas referidas a nuestros campo de accion para proover diagnosticos y soluciones de 
-            forma rapida y efectiva. Envianos tus datos y nos pondremos en contacto a la brevedad.</p>
+          <p class="text">Háganos saber lo que necesita, seguramente podemos ayudarlo</p>
         </div>
   
       <div class="box-form">
@@ -315,6 +298,9 @@
   
       
             <input type="text" class="form-input" id="name" placeholder="Nombre">
+            <p class="text-area" >Campo incompleto</p>
+
+            <input type="text" class="form-input" id="subject" placeholder="Asunto">
             <p class="text-area" >Campo incompleto</p>
             
             <input type="email" class="form-input" id="email" placeholder="E-mail">
@@ -333,7 +319,7 @@
     </section>
 
     <footer class="footer">
-        <a href="#">
+        <a target="_blank" href="#">
           <img loading="lazy" class="logoimg" src="./img/logo-footer.png" alt="NG Ambiental" />
     
         </a>
@@ -348,10 +334,10 @@
         </div>
     
         <div class="social">
-          <a href="#" class="header__navegacion--social-link"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#" class="header__navegacion--social-link"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#" class="header__navegacion--social-link"><i class="fa-brands fa-twitter"></i></a>
-          <a href="#" class="header__navegacion--social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a target="_blank" href="https://www.facebook.com/ngambiental/" class="header__navegacion--social-link"><i class="fa-brands fa-facebook"></i></a>
+          <a target="_blank" href="https://www.instagram.com/ngambiental/" class="header__navegacion--social-link"><i class="fa-brands fa-instagram"></i></a>
+          <a target="_blank" href="#" class="header__navegacion--social-link"><i class="fa-brands fa-twitter"></i></a>
+          <a target="_blank" href="https://www.linkedin.com/in/nicolas-gonzalez-ng-ambiental/" class="header__navegacion--social-link"><i class="fa-brands fa-linkedin-in"></i></a>
         </div>
     </footer>
 
@@ -368,6 +354,7 @@ integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+
     <!--Sweet alert-->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+    <script src="js/menu.js"></script>
     <script src="js/form.js"></script>
   </body>
 </html>

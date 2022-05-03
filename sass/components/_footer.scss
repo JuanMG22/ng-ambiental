@@ -13,6 +13,11 @@
     align-items: center;
     padding: 2rem 0rem;
 
+    @include tablet {
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
     .logoimg {
         height: 6rem;
     }
@@ -24,6 +29,10 @@
         justify-content: space-between;
         align-items: center;
         width: 9rem;
+
+        @include tablet {
+            width: 12rem;
+        }
     }
 
     .contact {
