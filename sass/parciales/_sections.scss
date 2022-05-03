@@ -12,12 +12,24 @@
 
     &__texto-box {
         padding: 0.75rem 0;
-        width: 60ch;
         line-height: 3ch;
+        width: 60ch;
         font-size: 140%;
         font-weight: 300;
         color: #31374c;
         margin-bottom: 3rem;
+
+        @include tablet {
+            width: 100%;
+            padding: 0.75rem 3rem;
+            line-height: 4.2ch;
+        }
+
+        &--parrafo {
+            @include tablet {
+                font-size: 150%
+            }
+        }
     }
 
     &__img {
@@ -46,6 +58,12 @@
         width: 100%;
         flex-wrap: nowrap;
         padding-bottom: 6rem;
+        @include mobile-l {
+            flex-wrap: wrap;
+            column-gap: 20rem;
+            margin-top: 0rem;
+            padding-bottom: 0rem;
+        }
     
         &--item {
             align-self: center;
@@ -103,6 +121,7 @@
         align-items: center;
         width: 100%;
         height: 100%;
+        flex-wrap: wrap;
     }
 
     &__img-box {

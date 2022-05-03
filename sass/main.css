@@ -146,6 +146,11 @@ a {
   }
 }
 
+.header__navegacion--social-link:hover:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 .header__navegacion--social-link i {
   font-size: 120%;
   font-weight: bold;
@@ -153,6 +158,13 @@ a {
   outline: 2px solid #408a63;
   padding: 5px;
   border-radius: 9999px;
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
+}
+
+.header__navegacion--social-link i:hover {
+  color: #fff;
+  outline: 2px solid #fff;
 }
 
 @media all and (max-width: 768px) {
@@ -175,7 +187,31 @@ header {
       justify-content: space-around;
   height: 6rem;
   z-index: 5;
+  -webkit-box-shadow: 1px 1px 3px 0 #31374c;
+          box-shadow: 1px 1px 3px 0 #31374c;
   background: rgba(49, 55, 76, 0.79);
+}
+
+@media all and (max-width: 768px) {
+  header {
+    background: #31374c;
+  }
+}
+
+@media all and (max-width: 768px) {
+  header .container-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 1rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
 }
 
 header .contactLinks {
@@ -207,7 +243,13 @@ header .contactLinks .contactDetails i:hover {
 }
 
 header .logoContenedor img {
-  height: 6.5rem;
+  height: 4.5rem;
+}
+
+@media all and (max-width: 768px) {
+  header .logoContenedor img {
+    height: 4.5rem;
+  }
 }
 
 nav ul {
@@ -260,10 +302,10 @@ nav ul li a::after {
 }
 
 .menuBtn {
-  position: absolute;
   cursor: pointer;
-  top: 15px;
-  right: 30px;
+  padding: 0 20px;
+  color: #fff;
+  font-size: 150%;
   z-index: 2;
   display: none;
   color: #fff;
@@ -329,9 +371,6 @@ li a:focus::after {
   .menuBtn {
     display: block;
   }
-  .logoHeader {
-    padding: 6px 0 0px 15px;
-  }
   .titulo2 {
     font-size: 3.8rem;
   }
@@ -349,10 +388,11 @@ li a:focus::after {
         -ms-flex-direction: column;
             flex-direction: column;
     position: fixed;
+    top: 47px;
     right: 0;
     width: 100vw;
     height: 100vh;
-    background: #31374c;
+    background: rgba(49, 55, 76, 0.97);
     opacity: 0.9;
     line-height: 3;
     padding: 30px;
@@ -382,7 +422,6 @@ li a:focus::after {
     height: .2rem;
     margin: 2rem 0 1rem 0;
     background-color: #408a63;
-    border: none;
     width: 90%;
     -ms-flex-item-align: center;
         align-self: center;
@@ -395,7 +434,7 @@ li a:focus::after {
     visibility: visible;
   }
   nav ul li a {
-    font-size: 2.5rem;
+    font-size: 2.1rem;
   }
 }
 
@@ -424,12 +463,26 @@ li a:focus::after {
 
 .company__texto-box {
   padding: 0.75rem 0;
-  width: 60ch;
   line-height: 3ch;
+  width: 60ch;
   font-size: 140%;
   font-weight: 300;
   color: #31374c;
   margin-bottom: 3rem;
+}
+
+@media all and (max-width: 768px) {
+  .company__texto-box {
+    width: 100%;
+    padding: 0.75rem 3rem;
+    line-height: 4.2ch;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .company__texto-box--parrafo {
+    font-size: 150%;
+  }
 }
 
 .company__img {
@@ -485,6 +538,17 @@ li a:focus::after {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   padding-bottom: 6rem;
+}
+
+@media all and (max-width: 480px) {
+  .services__logo-box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-column-gap: 20rem;
+            column-gap: 20rem;
+    margin-top: 0rem;
+    padding-bottom: 0rem;
+  }
 }
 
 .services__logo-box--item {
@@ -573,6 +637,8 @@ li a:focus::after {
           align-items: center;
   width: 100%;
   height: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .staff__img-box {
@@ -687,8 +753,8 @@ li a:focus::after {
   margin: 8% 0;
   font-weight: 300;
   font-size: 155%;
-  width: 52ch;
   line-height: 3rem;
+  text-align: center;
 }
 
 .section-form .box-form .form-input {
@@ -946,6 +1012,16 @@ li a:focus::after {
   padding: 2rem 0rem;
 }
 
+@media all and (max-width: 768px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 2rem;
+  }
+}
+
 .footer .logoimg {
   height: 6rem;
 }
@@ -962,6 +1038,12 @@ li a:focus::after {
       -ms-flex-align: center;
           align-items: center;
   width: 9rem;
+}
+
+@media all and (max-width: 768px) {
+  .footer .social {
+    width: 12rem;
+  }
 }
 
 .footer .contact .p-contact {

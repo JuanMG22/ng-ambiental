@@ -11,9 +11,14 @@
             width: 9rem;
             @include tablet {
                 display: none;
-            }        
+            }
         }
 
+        &--social-link:hover {
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
         &--social-link i {
             font-size: 120%;
             font-weight: bold;
@@ -21,6 +26,13 @@
             outline: 2px solid $secondary;
             padding: 5px;
             border-radius: 9999px;
+            transition: all ease .3s;
+
+            &:hover {
+                color: $blanco;
+                outline: 2px solid $blanco;
+            }
+
             @include tablet {
                 font-size: 220%;
                 margin-top: 0.5rem;
@@ -38,7 +50,21 @@ header {
     justify-content: space-around;
     height: 6rem;
     z-index: 5;
+    box-shadow: $sombra-negra;
     background: $primary-transparency;
+    @include tablet {
+        background: $primary;
+    }
+
+    .container-mobile {
+        @include tablet {
+            display: flex;
+            padding: 0 1rem;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+    }
 
     .contactLinks {
         margin-left: 70px;
@@ -65,7 +91,10 @@ header {
 
 
     .logoContenedor img {
-        height: 6.5rem;
+        height: 4.5rem;
+        @include tablet {
+            height: 4.5rem;
+        }
     }
 }
 
@@ -112,10 +141,10 @@ nav ul {
 }
 
 .menuBtn {
-    position: absolute;
     cursor: pointer;
-    top: 15px;
-    right: 30px;
+    padding: 0 20px;
+    color: $blanco;
+    font-size: 150%;
     z-index: 2;
     display: none;
     color: $blanco;
@@ -189,9 +218,6 @@ li a:focus::after {
         display: block;
     }
 
-    .logoHeader {
-        padding: 6px 0 0px 15px;
-    }
 
     .titulo2 {
         font-size: 3.8rem;
@@ -207,10 +233,11 @@ li a:focus::after {
         display: flex;
         flex-direction: column;
         position: fixed;
+        top: 47px;
         right: 0;
         width: 100vw;
         height: 100vh;
-        background: rgba(49, 55, 76, 1);
+        background: rgba(49, 55, 76, 0.97);
         opacity: 0.9;
         line-height: 3;
         padding: 30px;
@@ -235,7 +262,6 @@ li a:focus::after {
         height: .2rem;
         margin: 2rem 0 1rem 0;
         background-color: $secondary;
-        border: none;
         width: 90%;
         align-self: center;
     }
@@ -247,6 +273,6 @@ li a:focus::after {
     }
 
     nav ul li a {
-        font-size: 2.5rem;
+        font-size: 2.1rem;
     }
 }
