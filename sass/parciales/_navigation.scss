@@ -234,8 +234,8 @@ li a:focus::after {
         flex-direction: column;
         position: fixed;
         top: 47px;
-        right: 0;
-        width: 100vw;
+        left: 0;
+        width: 100%;
         height: 100vh;
         background: rgba(49, 55, 76, 0.97);
         opacity: 0.9;

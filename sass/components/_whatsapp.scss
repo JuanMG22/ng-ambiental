@@ -3,8 +3,18 @@
     right:0;
     bottom: 1rem;
     z-index: 1;
+    transition: ease all .3s;
+    filter: brightness(100%);
+
+    &:hover {
+        transform: scale(1.05);
+    }
 
         .img-whats{
             width: 8rem;
+            transition: ease all .3s;
+            &:hover {
+                filter: brightness(120%);
+            }
         }
 }
