@@ -389,8 +389,8 @@ li a:focus::after {
             flex-direction: column;
     position: fixed;
     top: 47px;
-    right: 0;
-    width: 100vw;
+    left: 0;
+    width: 100%;
     height: 100vh;
     background: rgba(49, 55, 76, 0.97);
     opacity: 0.9;
@@ -452,13 +452,13 @@ li a:focus::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 5rem;
+  padding-top: 7.5rem;
 }
 
 .company__titulo {
   font-size: 250%;
   font-weight: 900;
-  letter-spacing: 0.75rem;
+  letter-spacing: 0.5rem;
 }
 
 .company__texto-box {
@@ -486,7 +486,7 @@ li a:focus::after {
 }
 
 .company__img {
-  margin-top: 6rem;
+  margin-top: 7rem;
   height: 25rem;
   width: 100%;
   background-size: cover;
@@ -509,15 +509,14 @@ li a:focus::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 5rem;
+  padding-top: 7.5rem;
   background-color: #fff;
-  padding-top: 6rem;
 }
 
 .services__titulo {
   font-size: 250%;
   font-weight: 900;
-  letter-spacing: 0.75rem;
+  letter-spacing: 0.5rem;
   color: #31374c;
 }
 
@@ -537,7 +536,7 @@ li a:focus::after {
   width: 100%;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  padding-bottom: 6rem;
+  margin-bottom: 1rem;
 }
 
 @media all and (max-width: 480px) {
@@ -547,7 +546,6 @@ li a:focus::after {
     -webkit-column-gap: 20rem;
             column-gap: 20rem;
     margin-top: 0rem;
-    padding-bottom: 0rem;
   }
 }
 
@@ -592,7 +590,7 @@ li a:focus::after {
 }
 
 .services__img {
-  margin-top: 6rem;
+  margin-top: 7rem;
   height: 25rem;
   width: 100%;
   background-size: cover;
@@ -615,13 +613,13 @@ li a:focus::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 5rem;
+  padding-top: 7.5rem;
 }
 
 .staff__titulo {
   font-size: 250%;
   font-weight: 900;
-  letter-spacing: 0.75rem;
+  letter-spacing: 0.5rem;
 }
 
 .staff__container {
@@ -713,7 +711,7 @@ li a:focus::after {
 }
 
 .staff__img {
-  margin-top: 6rem;
+  margin-top: 7rem;
   height: 25rem;
   width: 100%;
   background-size: cover;
@@ -727,16 +725,32 @@ li a:focus::after {
   background-position: bottom right;
   background-size: 27%;
   background-repeat: no-repeat;
-  padding-bottom: 7rem;
 }
 
 .section-form-container {
   width: 40%;
   margin: auto;
+  padding: 7rem 0;
+}
+
+@media all and (max-width: 1440px) {
+  .section-form-container {
+    width: 50%;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .section-form-container {
+    width: 60%;
+  }
 }
 
 .section-form .title {
-  margin-top: 40%;
+  font-size: 250%;
+  font-weight: 900;
+  letter-spacing: 0.5rem;
+  margin-top: 7rem;
+  padding-top: 7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -864,27 +878,52 @@ li a:focus::after {
   right: 0;
   bottom: 1rem;
   z-index: 1;
+  -webkit-transition: ease all .3s;
+  transition: ease all .3s;
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
+}
+
+.link-whats:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .link-whats .img-whats {
   width: 8rem;
+  -webkit-transition: ease all .3s;
+  transition: ease all .3s;
+}
+
+.link-whats .img-whats:hover {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
 }
 
 .carrusel .img-carusel {
-  height: 70vh;
+  height: 89vh;
   -o-object-fit: cover;
      object-fit: cover;
-  opacity: 0.9;
   -webkit-filter: brightness(50%);
           filter: brightness(50%);
 }
 
 .titCarusel {
+  padding-top: 2.848rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
+  height: 100%;
   font-size: 250%;
   font-weight: 900;
-  letter-spacing: 0.75rem;
-  width: 45ch;
+  letter-spacing: 0.5rem;
   font-size: 270%;
 }
 
@@ -932,7 +971,7 @@ li a:focus::after {
   letter-spacing: 0.75rem;
   font-size: 250%;
   font-weight: 900;
-  letter-spacing: 0.75rem;
+  letter-spacing: 0.5rem;
   color: #fff;
 }
 
@@ -1049,5 +1088,6 @@ li a:focus::after {
 .footer .contact .p-contact {
   color: #ccc;
   font-weight: 300;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
