@@ -27,7 +27,7 @@
 
         &--parrafo {
             @include tablet {
-                font-size: 150%
+                font-size: 130%;
             }
         }
     }
@@ -53,9 +53,15 @@
         justify-content: center;
         align-items: center;
         column-gap: 2rem;
-        width: 100%;
+        width: 200px;
         flex-wrap: nowrap;
         margin-bottom: 1rem;
+        @include tablet {
+            flex-wrap: wrap;
+            column-gap: 20rem;
+            margin-top: 0.2rem;
+            row-gap: 1rem;
+        }
         @include mobile-l {
             flex-wrap: wrap;
             column-gap: 20rem;
@@ -75,13 +81,13 @@
             fill: 100%;
     
             @include laptop-l {
-                width: 150px;
+                width: 200px;
                 height: 150px;
             }
     
             @include mobile-l {
-                width: 150px;
-                height: 150px;
+                width: 180px;
+                height: 180px;
             }
         }
     
@@ -90,8 +96,14 @@
             font-size: 140%;
             text-align: center;
             font-weight: 400;
-            width: 17ch;
+            width: 200px;
             margin: 0;
+
+            @include mobile-l {
+                width: 180px;
+                font-size: 170%;
+            }
+
         }
 
     }
@@ -119,6 +131,10 @@
         width: 100%;
         height: 100%;
         flex-wrap: wrap;
+
+        @include tablet {
+            gap: 3rem;
+        }
     }
 
     &__img-box {
@@ -128,17 +144,27 @@
         justify-content: flex-start;
         height: 25rem;
 
+        @include mobile-l {
+            margin-top: 1rem;
+            height: 100%;
+        }
+
         &--img {
             border-radius: 100%;
             width: 18rem;
+            object-fit: cover;
+
+            @include tablet {
+                width: 15rem;
+            }
         }
     }
     &__texto-box {
-        margin-top: 6rem;
+        margin: 6rem 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        row-gap: 30px;
+        row-gap: 1.875rem;
         height: 100%;
         padding: 0.75rem 0;
         width: 21ch;
@@ -146,13 +172,26 @@
         font-size: 140%;
         font-weight: 300;
         color: #31374c;
-        margin-bottom: 6rem;
+
+        @include tablet {
+            margin: 3rem 0;
+            row-gap: 1rem;
+        }
+
+        @include mobile-l {
+            margin: 1rem 0;
+            width: 70%;
+        }
 
         &--titulo {
             letter-spacing: 0.40rem;
             font-weight: 700;
             width: 20ch;
             font-size: 180%;
+
+            @include laptop {
+                width: 100%;
+            }
         }
         &--subtitulo {
             letter-spacing: 0.40rem;
@@ -160,18 +199,39 @@
             font-weight: 500;
             width: 30ch;
             color: $btn-color;
+            @include tablet-l {
+                width: 100%;
+            }
         }
 
         &--parrafo {
             line-height: 1.9rem;
             font-weight: 300;
             color: #31374c;
+            width: 100%;
+
+            @include tablet {
+                font-size: 100%;
+            }
+
+            @include mobile-l {
+                font-size: 105%;
+            }
         }
     }
 
     .btn {
         font-size: 95%;
-        margin-top: 20px;
+        margin-top: 1.25rem;
+
+        @include laptop {
+            font-size: 80%;
+        }
+
+        @include tablet {
+            font-size: 70%;
+            margin-top: 0.625rem;
+        }
     }
 
     &__img {

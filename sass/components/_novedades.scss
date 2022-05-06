@@ -9,6 +9,10 @@
     justify-content: center;
     height: 600px;
     padding-top: 16rem;
+    @include tablet-l {
+        height: 100%;
+        padding: 7rem 0;
+    }
 }
 
 .novedades__titulo{
@@ -25,16 +29,35 @@
     display: flex;
     justify-content: space-around;
     
+    @include tablet-l {
+        justify-content: center !important;
+        flex-direction: column;
+    }
     
 }
 
 .card{
     margin-top: 2px;
-    width: 21rem;
+    width: 22rem;
     height: 22rem;
     border: 1px solid rgba(128, 128, 128, 0.5);
     border-radius: 0%;
+    @include laptop-l {
+        width: 20rem;
+    }
+    @include laptop {
+        width: 18rem;
+        height: 18rem;
+    }
 
+    @include tablet-l {
+        width: 20rem;
+        height: 20rem;
+    }
+    @include mobile {
+        width: 17rem;
+        height: 17rem;
+    }
     .card-body{
         display: flex;
         flex-direction: column;
@@ -47,16 +70,32 @@
                 font-size: 150%;
                 width: 20ch;
                 font-weight: 700;
+                @include tablet-l {
+                    font-size: 180%;
+                }
+                @include mobile {
+                    width: 100%;
+                }
             }
 
             .card-text{
                 font-weight:300;
                 width: 28ch;
                 font-size: 105%;
+                @include tablet-l {
+                    font-size: 130%;
+                }
+                
+                @include mobile {
+                    width: 100%;
+                }
             }
 
             .boton{
                 font-size: 80%;
+                @include tablet-l {
+                    font-size: 100%;
+                }
             }
 
 
@@ -66,9 +105,26 @@
 
 .img-card{
     margin-top: 3.2rem;
-    width: 21rem;
-    height: 200px;
+    width: 22rem;
+    height: 12.5rem;
     object-fit: cover;
-   
+    @include laptop-l {
+        width: 20rem;
+    }
+
+    @include laptop {
+        width: 18rem;
+        height: 10.5rem;
+    }
+
+    @include tablet-l {
+        width: 20rem;
+        height: 11.5rem;
+    }
+
+    @include mobile {
+        width: 17rem;
+        height: 11.5rem;
+    }
 }
 

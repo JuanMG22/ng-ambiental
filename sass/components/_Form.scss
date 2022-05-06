@@ -18,6 +18,15 @@
         @include laptop {
             width: 60%;
         }
+
+        @include mobile-l {
+            width: 80%;
+            padding: 0 0 7rem  0;
+        }
+
+        @include mobile {
+            width: 85%;
+        }
     }
 
     .title {
@@ -26,9 +35,16 @@
         padding-top: 7rem;
         display: flex;
         justify-content: center;
+        align-items: center;
         color: $primary;
         font-weight: 900;
         font-size: 430%;
+        
+
+        @include mobile-l {
+            font-size: 350%;
+            letter-spacing: 0.20rem;
+        }
     }
 
     .text {
@@ -38,6 +54,10 @@
         font-size: 155%;
         line-height: 3rem;
         text-align: center;
+
+        @include tablet {
+            line-height: 2rem;
+        }
     }
 
     .box-form {
@@ -98,6 +118,23 @@
             font-size: 150%;
             font-weight: 900;
             color: $primary;
+            transition: ease all .3s;
+
+            &:hover {
+                color: $btn-color;
+            }
+
+            @include tablet {
+                margin: 2% 85%;
+            }
+
+            @include mobile-l {
+                margin: 2% 80%;
+            }
+
+            @include mobile {
+                margin: 2% 72%;
+            }
         }
 
         .error {
@@ -106,7 +143,7 @@
         }
 
         .text-area {
-            display: none ;
+            display: none;
             color: red;
             font-weight: 900;
         }

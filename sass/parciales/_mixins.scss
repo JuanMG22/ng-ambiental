@@ -1,3 +1,6 @@
+@import "./variables";
+@import "./responsive";
+
 // Titulos
 
 @mixin container-section {
@@ -12,6 +15,12 @@
     font-size: 250%;
     font-weight: 900;
     letter-spacing: 0.5rem;
+    width: 100%;
+    text-align: center;
+    @include mobile-l {
+        letter-spacing: 0.35rem;
+        font-size: 280%;
+    }
 }
 
 @mixin img-section {
