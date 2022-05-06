@@ -94,6 +94,33 @@
   padding: 0;
 }
 
+html {
+  scroll-padding-top: 4rem;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #31374c #fff;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: -webkit-gradient(linear, left top, left bottom, from(#31374c), to(#31374c));
+  background: linear-gradient(180deg, #31374c, #31374c);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(49, 55, 76, 0.89)), to(rgba(49, 55, 76, 0.89)));
+  background: linear-gradient(180deg, rgba(49, 55, 76, 0.89), rgba(49, 55, 76, 0.89));
+}
+
 ul,
 ol,
 li,
