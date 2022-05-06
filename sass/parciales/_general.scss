@@ -11,6 +11,31 @@
     padding: 0;
 }
 
+html {
+    scroll-padding-top: 4rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: $primary #fff
+}
+
+::-webkit-scrollbar {
+    width: 12px
+}
+
+::-webkit-scrollbar-track {
+    background: #fff
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, $primary, $primary);
+    border-radius: 10px
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, $primary-transparency, $primary-transparency)
+}
+
 
 ul,
 ol,
