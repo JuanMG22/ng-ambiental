@@ -5,7 +5,7 @@ const preloader = document.querySelector(`#loader`);
 
 const cerrarLoader = () => preloader.classList.toggle(`close-loader`)
 
-window.addEventListener('DOMContentLoaded', cerrarLoader);
+window.addEventListener('load', cerrarLoader);
 
 
 AOS.init({
