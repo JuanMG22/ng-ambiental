@@ -201,7 +201,7 @@ header {
   z-index: 5;
   -webkit-box-shadow: 1px 1px 3px 0 #31374c;
           box-shadow: 1px 1px 3px 0 #31374c;
-  background: rgba(49, 55, 76, 0.79);
+  background: rgba(49, 55, 76, 0.89);
 }
 
 @media all and (max-width: 768px) {
