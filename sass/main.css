@@ -1361,7 +1361,6 @@ li a:focus::after {
   background-size: cover;
   z-index: 9999;
   width: 100%;
-  background: #31374c;
   background-size: cover;
   z-index: 9999;
   display: -webkit-box;
@@ -1373,6 +1372,8 @@ li a:focus::after {
       -ms-flex-align: center;
           align-items: center;
   padding: 2rem 0rem;
+  -webkit-box-shadow: 1px 1px 3px 0 #31374c;
+          box-shadow: 1px 1px 3px 0 #31374c;
 }
 
 @media all and (max-width: 768px) {
@@ -1410,7 +1411,7 @@ li a:focus::after {
 }
 
 .footer .contact .p-contact {
-  color: #ccc;
+  color: #408a63;
   font-weight: 300;
   text-align: center;
 }

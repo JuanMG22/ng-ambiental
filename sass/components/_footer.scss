@@ -5,14 +5,14 @@
     background-size: cover;
     z-index: 9999;
     width: 100%;
-    background: $primary;
     background-size: cover;
     z-index: 9999;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 2rem 0rem;
-
+    box-shadow: $sombra-negra;
+    
     @include tablet {
         flex-direction: column;
         row-gap: 2rem;
@@ -39,7 +39,7 @@
 
 
         .p-contact {
-            color: $blanco-texto;
+            color: $secondary;
             font-weight: 300;
             text-align: center;
         }
