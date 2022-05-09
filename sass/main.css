@@ -1177,6 +1177,10 @@ li a:focus::after {
   font-weight: 900;
 }
 
+.modal-title {
+  color: #fff !important;
+}
+
 .link-whats {
   position: fixed;
   right: 0;
