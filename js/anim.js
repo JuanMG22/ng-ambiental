@@ -3,7 +3,7 @@
 // Variable del loader
 const preloader = document.querySelector(`#loader`);
 
-const cerrarLoader = () => preloader.classList.toggle(`close-loader`)
+const cerrarLoader = () => preloader.classList.add(`close-loader`)
 
 window.addEventListener('load', cerrarLoader);
 

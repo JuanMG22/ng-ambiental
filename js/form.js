@@ -58,13 +58,19 @@ area.addEventListener("keydown", ()=>{
 
     
 Swal.fire({
-  icon: 'success',
-  width: 200,
-  height: 80,
-  title: 'Consulta Enviada',
-  showConfirmButton: false,
-  timer: 1500
-});
+      title: 'Consulta enviada',
+      icon: 'success',
+      iconColor: '#408a63',
+      toast: true,
+      position: 'top-end',
+      timer: 4000,
+      timerProgressBar: true,
+      background: '#31374c',
+      showConfirmButton: false,
+      customClass: {
+        title: 'modal-title'
+      }
+    });
 
     nombre.value = "";
     asunto.value = "";
