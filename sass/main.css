@@ -622,9 +622,6 @@ li a:focus::after {
   margin-top: 7rem;
   height: 25rem;
   width: 100%;
-  background-size: cover;
-  background-position: center 65%;
-  background-attachment: fixed;
   background-image: url("../img/company-image.png");
 }
 
@@ -753,9 +750,6 @@ li a:focus::after {
   margin-top: 7rem;
   height: 25rem;
   width: 100%;
-  background-size: cover;
-  background-position: center 65%;
-  background-attachment: fixed;
   background-image: url("../img/services-image.png");
 }
 
@@ -955,9 +949,6 @@ li a:focus::after {
   margin-top: 7rem;
   height: 25rem;
   width: 100%;
-  background-size: cover;
-  background-position: center 65%;
-  background-attachment: fixed;
   background-image: url("../img/staff-image.png");
 }
 
