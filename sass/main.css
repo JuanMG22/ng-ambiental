@@ -1463,6 +1463,11 @@ li a:focus::after {
   }
 }
 
+.novedades-text {
+  color: #ccc;
+  font-weight: 300;
+}
+
 .footer {
   background: #31374c;
   background-size: cover;
