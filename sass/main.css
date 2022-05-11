@@ -577,7 +577,7 @@ li a:focus::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 7.5rem;
+  padding-top: 9vh;
 }
 
 .company__titulo {
@@ -599,10 +599,9 @@ li a:focus::after {
   padding: 0.75rem 0;
   line-height: 3ch;
   width: 60ch;
-  font-size: 140%;
+  font-size: 145%;
   font-weight: 300;
   color: #31374c;
-  margin-bottom: 3rem;
 }
 
 @media all and (max-width: 768px) {
@@ -643,7 +642,7 @@ li a:focus::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 7.5rem;
+  padding-top: 9vh;
   background-color: #fff;
 }
 
@@ -774,7 +773,7 @@ li a:focus::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 7.5rem;
+  padding-top: 9vh;
 }
 
 .staff__titulo {
@@ -1221,7 +1220,7 @@ li a:focus::after {
 }
 
 .carrusel .img-carusel {
-  height: 89vh;
+  height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-filter: brightness(50%);
