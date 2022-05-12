@@ -46,7 +46,7 @@
         width: 20rem;
     }
     @include laptop {
-        width: 18rem;
+        width: 20rem;
         height: 18rem;
     }
 
@@ -57,48 +57,6 @@
     @include mobile {
         width: 17rem;
         height: 17rem;
-    }
-    .card-body{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-
-     
-            .card-title{
-                text-align: left;
-                font-size: 150%;
-                width: 20ch;
-                font-weight: 700;
-                @include tablet-l {
-                    font-size: 180%;
-                }
-                @include mobile {
-                    width: 100%;
-                }
-            }
-
-            .card-text{
-                font-weight:300;
-                width: 28ch;
-                font-size: 105%;
-                @include tablet-l {
-                    font-size: 130%;
-                }
-                
-                @include mobile {
-                    width: 100%;
-                }
-            }
-
-            .boton{
-                font-size: 80%;
-                @include tablet-l {
-                    font-size: 100%;
-                }
-            }
-
-
     }
 
 }
@@ -113,7 +71,7 @@
     }
 
     @include laptop {
-        width: 18rem;
+        width: 20rem;
         height: 10.5rem;
     }
 
@@ -131,4 +89,13 @@
 .novedades-text {
     color: #ccc;
     font-weight: 300;
+}
+
+.ig-iframe {
+    height: 420x;
+    width: 320px;
+
+    @include mobile {
+        width: 270px !important;
+    }
 }
