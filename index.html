@@ -310,21 +310,27 @@
         <form action="" class="form" id="Form">
   
       
-            <input data-aos="fade-up"  type="text" class="form-input" id="name" placeholder="Nombre">
+            <input data-aos="fade-up"  type="text" class="form-input" id="name" name="name" placeholder="Nombre">
             <p class="text-area" >Campo incompleto</p>
 
-            <input data-aos="fade-up"  type="text" class="form-input" id="subject" placeholder="Asunto">
+            <input data-aos="fade-up"  type="text" class="form-input" id="subject" name="subject" placeholder="Asunto">
             <p class="text-area" >Campo incompleto</p>
             
-            <input data-aos="fade-up"  type="email" class="form-input" id="email" placeholder="E-mail">
+            <input data-aos="fade-up"  type="email" class="form-input" id="email" name="email" placeholder="E-mail">
             <p class="text-area" >Campo incompleto</p>
   
-            <textarea data-aos="fade-up"  name="" id="text-area" class=" area" cols="10" rows="5" placeholder="Escriba su consulta"></textarea>
+            <textarea data-aos="fade-up"  name="message" id="text-area" class=" area" cols="10" rows="5" placeholder="Escriba su consulta"></textarea>
             <p class="text-area" >Campo incompleto</p>
             
-            <input data-aos="fade-up" type="submit" class=" send" id="submit" value="Enviar">
+            <input data-aos="fade-up" type="submit" class=" send" id="button" value="Enviar">
       
        </form>
+       <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+      emailjs.init('4P8nWtyLyWQWM82BB')
+    </script>
   
       </div>
       </div>
@@ -360,7 +366,29 @@
 integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
 </script>
 
+  <!--EMAILjs-->
+  <script>
+  const btn = document.getElementById('button');
 
+document.getElementById('Form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_orqzweb';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Enviar';
+     
+    }, (err) => {
+      btn.value = 'Enviar';
+     
+    });
+});
+</script>
 
     <!--Sweet alert-->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
